@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".registration.PhoneAuthentication"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/backgroundStudentMainPage"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:text="@string/TextVerificationCode"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="0dp">
+    </TextView>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/verificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/HintVerificationCode"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15sp"
+
+        app:met_baseColor="#05080A"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/registeredFormsMet"
+        app:met_singleLineEllipsis="true">
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+    <TextView
+        android:id="@+id/ExampleTextAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textAlignment="viewStart"
+        android:text="@string/ExpanationVerificationCode"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="0dp"
+        android:gravity="start"
+        android:paddingBottom="15dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnVerifyRegister"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_register"
+        android:layout_weight="1"
+        android:text="@string/btnRegister"
+        style="?android:attr/buttonBarButtonStyle"/>
+
+    <ProgressBar
+        android:id="@+id/progressbarPhoneAuth"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="98dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

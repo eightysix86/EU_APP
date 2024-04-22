@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu  xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/action_search"
+            android:icon="@drawable/ic_menu_search"
+            android:title="@string/menuSearch"/>
+        <item
+            android:id="@+id/action_message"
+            android:icon="@drawable/ic_menu_message"
+            android:title="@string/menuMessenger" />
+        <item
+            android:id="@+id/action_main_student_page"
+            android:icon="@drawable/ic_menu_person"
+            android:title="@string/menuMainStudentPage" />
+
+    <item
+        android:id="@+id/action_schedule"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="@string/menuSchedule" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_menu_setting"
+        android:title="@string/menuSettings" />
+    </menu>

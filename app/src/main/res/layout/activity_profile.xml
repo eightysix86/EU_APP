@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".pages.ProfileStudent"
+    android:id="@+id/RelativeLayoutImageProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundStudentMainPage">
+
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbarFadeDuration="@integer/google_play_services_version">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imStudentMainPhotoProfile"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/imageDescription"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        android:background="@drawable/image_profile"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/tvPIBvalueProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imStudentMainPhotoProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/valuesStudentDate"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/imStudentMainPhotoProfile" />
+
+    <TextView
+        android:id="@+id/tvOnlineProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imStudentMainPhotoProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/tvPIBvalueProfile"
+        android:text=""
+        android:textColor="@color/onlineText"
+        android:textSize="14sp"
+        android:layout_toEndOf="@id/imStudentMainPhotoProfile" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvOnlineProfile"
+        android:layout_toRightOf="@+id/imStudentMainPhotoProfile"
+        android:layout_toEndOf="@+id/imStudentMainPhotoProfile">
+
+        <Button
+
+            android:id="@+id/btnListFriendsProfile"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:text="@string/btnListFriends"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnListSubscribersProfile"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:paddingEnd="0dp"
+            android:paddingRight="5dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:text="@string/btnListSubscribers"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnListPollProfile"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:text="@string/btnListPoll"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout
+        android:id="@+id/LinerLayouProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imStudentMainPhotoProfile"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center">-->
+
+
+    <Button
+        android:id="@+id/btnSendMessageProfile"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+
+        android:background="@drawable/btn_write_message"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/btnSendMessageProfile"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+
+        android:layout_below="@+id/imStudentMainPhotoProfile"
+        android:layout_toLeftOf="@+id/btnAddToFriends"
+        android:layout_toStartOf="@+id/btnAddToFriends"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginEnd="5dp" />
+
+
+    <Button
+        android:id="@+id/btnAddToFriends"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_add_friend"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/btnAddFriend"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/imStudentMainPhotoProfile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tvAboutStudentProfile"
+        android:layout_toEndOf="@+id/tvAboutStudentProfile" />
+
+<!--    </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/tvAboutStudentProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAddToFriends"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/studentInfo"
+
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvGroupProfile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAboutStudentProfile"
+            android:text="@string/group"
+            android:textColor="@color/onlineText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvGroupValueProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/tvGroupProfile"
+            android:text=" ІПЗ-41"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+        <View
+            android:id="@+id/lineGroupProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/tvGroupValueProfile"
+            android:background="@color/lines" />
+
+        <TextView
+            android:id="@+id/tvDateOfEntryProfile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGroupValueProfile"
+            android:text="@string/dateOfEntry"
+            android:textColor="@color/onlineText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDateOfEntryValueProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/tvDateOfEntryProfile"
+            android:text="2016-08-21"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+        <View
+            android:id="@+id/lineDateOfEntry"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/tvDateOfEntryValueProfile"
+            android:background="@color/lines" />
+
+
+        <TextView
+            android:id="@+id/tvFormStudyingProfile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateOfEntryValueProfile"
+            android:text="@string/formOfStudying"
+            android:textColor="@color/onlineText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFormStudyingValueProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/tvFormStudyingProfile"
+            android:text="денна"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/lineFormStudyingOfEntryProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/tvFormStudyingValueProfile"
+            android:background="@color/lines" />
+
+        <TextView
+            android:id="@+id/tvFacultyProfile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFormStudyingValueProfile"
+            android:text="@string/faculty"
+            android:textColor="@color/onlineText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFacultyValueProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/tvFacultyProfile"
+            android:textColor="@color/black"
+            android:text="математики та інформатики"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/lineFacultyProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvFacultyValueProfile"
+            android:background="@color/linesMessenger" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/imSendPhotoWallProfile"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/logo_pnu"
+            android:background="@drawable/image_profile"
+            android:layout_below="@+id/lineFacultyProfile"
+            android:contentDescription="@string/contentDescription"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/btnSendWallPhotoProfile"
+            android:padding="0dp"
+            android:src="@drawable/btn_send_photo_wall"
+            android:background="@android:color/white"
+            android:layout_below="@+id/lineFacultyProfile"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/imSendPhotoWallProfile"
+            android:layout_toEndOf="@+id/imSendPhotoWallProfile"
+            android:contentDescription="@string/contentDescription"
+            />
+
+
+        <ImageView
+            android:layout_marginTop="14dp"
+            android:id="@+id/btnSendWallProfile"
+            android:padding="0dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/lineFacultyProfile"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"
+
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/contentDescription"
+            android:layout_alignParentEnd="true" />
+
+        <!--
+            <View
+                android:id="@+id/lineBelowEtWall"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/editTextWall"
+                android:background="@color/linesMessenger" />-->
+
+        <View
+            android:id="@+id/lineAbowePostsProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnWallNotesProfile"
+            android:background="@color/linesMessenger" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editTextWallProfile"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="@string/hindEditTextAddNotes"
+            android:layout_toLeftOf="@+id/btnSendWallProfile"
+            android:layout_toStartOf="@+id/btnSendWallProfile"
+            android:layout_marginRight="7dp"
+            android:layout_marginEnd="-7dp"
+            android:drawableLeft="@drawable/emoji_recent"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lineFacultyProfile"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/emoji_recent"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            android:layout_toEndOf="@+id/btnSendWallPhotoProfile"
+            android:layout_toRightOf="@+id/btnSendWallPhotoProfile"
+            android:focusedByDefault="false"
+            tools:targetApi="o" />
+
+
+        <Button
+            android:id="@+id/btnWallNotesProfile"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/editTextWallProfile"
+            android:background="@android:color/white"
+            android:text="@string/btnWallNotes"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvTextWallProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:layout_below="@+id/lineAbowePostsProfile"
+            android:layout_marginBottom="55dp"
+            android:gravity="center"
+            android:text="@string/emptyWallProfile"
+            android:background="@color/lines"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btnWallSearchProfile"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:layout_below="@+id/editTextWallProfile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_menu_search"
+            android:background="@drawable/ic_menu_person"
+
+            android:textColor="@android:color/black"
+
+            android:contentDescription="@string/todo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPostProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="55dp"
+            android:layout_below="@+id/lineAbowePostsProfile"
+            android:stackFromBottom="false">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_profileProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/bottom_navigation_item_background_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>
+
+
+
+    <!--    android:drawableLeft="@drawable/edittext_wall_drawable_left"
+        android:drawableStart="@drawable/edittext_wall_drawable_left"
+        android:drawablePadding="20dp"
+
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editTextWall"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext"
+            android:hint="@string/hindEditTextAddNotes"
+            android:layout_toLeftOf="@+id/btnSendWall"
+            android:layout_toStartOf="@+id/btnSendWall"
+
+            android:drawableLeft="@drawable/emoji_recent"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+
+            android:layout_toRightOf="@+id/imSendPhotoWall"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lineAboveEtWall"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/emoji_recent"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            android:layout_toEndOf="@+id/imSendPhotoWall" />
+        -->

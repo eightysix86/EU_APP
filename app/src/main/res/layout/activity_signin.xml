@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin.SignIn"
+    android:background="@color/backgroundStudentMainPage">
+
+<LinearLayout
+
+android:id="@+id/LinearLatoutSignIn"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="20dp"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/textSignIn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="26sp"
+    android:textAlignment="center"
+    android:text="@string/btnSingIn"
+    android:textColor="@color/SignInFormsMet"
+    android:layout_margin="10dp">
+</TextView>
+
+
+<com.rengwuxian.materialedittext.MaterialEditText
+    android:id="@+id/IDcardField"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/SeriesAndNumIDcard"
+    android:inputType="text"
+    android:text=""
+    android:textColor="@color/colorPrimary"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="15sp"
+
+    app:met_baseColor="#05080A"
+    app:met_floatingLabel="highlight"
+    app:met_primaryColor="@color/SignInFormsMet"
+    app:met_singleLineEllipsis="true">
+
+</com.rengwuxian.materialedittext.MaterialEditText>
+
+
+<com.rengwuxian.materialedittext.MaterialEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/passFieldSignIn"
+    android:hint="@string/passField"
+    android:inputType="textPassword"
+    android:text=""
+    android:textColor="@color/colorPrimary"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="15sp"
+
+    app:met_floatingLabel="highlight"
+    app:met_baseColor="#05080A"
+    app:met_primaryColor="@color/SignInFormsMet"
+    app:met_singleLineEllipsis="true"
+    >
+
+</com.rengwuxian.materialedittext.MaterialEditText>
+
+<Button
+    android:id="@+id/btnSignIn"
+    style="?android:attr/buttonBarButtonStyle"
+    android:layout_width="120dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_weight="1"
+    android:background="@drawable/btn_sign_in"
+    android:text="@string/btnSingIn"
+    android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbarSignIn"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="98dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/LinearLatoutSignIn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

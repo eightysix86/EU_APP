@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRequestsFriends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.RequestsFriendsActivity"
+    android:background="@color/backgroundStudentMainPage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutRequestsFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundStudentMainPage">
+
+        <!--    <include layout="@layout/friends_bar_layout"
+                android:id="@+id/friends_toolbar">
+            </include>-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabsRequestsFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00D1C5C5"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/requestsFriend_tabs_pages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_requests_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/bottom_navigation_item_background_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>

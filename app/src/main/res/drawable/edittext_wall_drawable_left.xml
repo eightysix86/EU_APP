@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="@color/textLoadPhotoStudent"/>
+            <corners android:radius="150dip" />
+        </shape>
+</item>
+</layer-list>

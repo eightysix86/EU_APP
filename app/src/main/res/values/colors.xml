@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="text_bottom">#c9c9c9</color>
+    <color name="ripple_effect">#aa5353</color>
+    <color name="btn_sign_in">#5F72D5</color>            <!-- #ed7171 firstly version-->
+    <color name="btn_sign_in_stroke">#7992FF</color>    <!-- #d66060 firstly version-->
+    <color name="btn_register">#03917A</color>         <!--  #E27A5D firstly version-->
+    <color name="btn_register_stroke">#17B9A0</color>  <!-- #d16e53 firstly version-->
+    <color name="registeredFormsMet">#03917A</color>
+    <color name="SignInFormsMet">#5F72D5</color>
+    <color name="progressBar">#D5C9C4</color>
+    <color name="progress_start">#9E9691</color>
+    <color name="progress_end">#756D69</color>
+    <color name="studentInfo">#168CE6</color>
+    <color name="black">#000001</color>
+    <color name="valuesStudentDate">#8C8CC2</color>
+    <color name="textLoadPhotoStudent">#8C8CC2</color>
+    <color name="backgroundStudentMainPage">#FFFFFF</color>
+    <color name="onlineText">#8D8585</color>
+    <color name="wallBackground">#F1F1F1</color>
+    <color name="borderWallBackground">#929292</color>
+    <color name="StartWallBackground">#858585</color>
+    <color name="lines">#F1F1F1</color>
+    <color name="linesMessenger">#DDDDDD</color>
+    <color name="editTextMessage">#F7F2F2</color>
+
+    // Message colors
+
+    <color name="colorPrimaryMessage">#5C5F64</color>      <!--Original colorPrimary #008577-->
+    <color name="colorPrimaryDarkMessage">#00000C</color><!--Original colorPriamryDark #00574B-->
+    <color name="colorPrimaryDarkText">#00574B</color>
+    <color name="colorAccentMessage">#D81B60</color>
+    <color name="colorAccentWhite">#FFFFFF</color>
+    <color name="colorData">#00574B</color>
+    <color name="colorEmail">#72D3FF</color>
+    <color name="colorEmailCurrent">#F3E576</color>
+    <color name="colorBackGround">#D5CFC1</color>
+    <color name="textColorHint">#818181</color>
+    <color name="messageMy">#A3E1FD</color>
+    <color name="messageAlien">#E6E6E6</color>
+    <color name="messageUnseens">#EB5959</color>
+
+    // Friends
+    <color name="btnDeclineFriend">#EB5959</color>
+
+    <color name="imgOnline">#05df29</color>
+    <color name="imgSeenMessage">#5F72D5</color>
+    <color name="SeenMessage">#0390A3</color>
+
+    // Menu
+    <color name="menuColor">#F8F8F8</color>
+
+
+    // Post
+
+    <color name="likePress">#FF0000</color>
+    <color name="iconPostColor">#B8B8B8</color>
+</resources>

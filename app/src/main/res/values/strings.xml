@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">ПНУ</string>
+    <string name="app_in_name">ПНУ</string>
+    <string name="app_name_after">Соц мережа</string>
+    <string name="text_bottom">Соц мережа</string>
+    <string name="btnSingIn">Вхід</string>
+    <string name="btnEnter">Увійти</string>
+    <string name="btnConfirm">Підтвердити</string>
+    <string name="btnRegister">Зареєструвати</string>
+    <string name="btnRegistration">Реєстрація</string>
+    <string name="emailField">Емейл</string>
+    <string name="passField">Пароль</string>
+    <string name="nameField">Ім\'я</string>
+    <string name="phoneField">Телефон +380YYXXXXXXX</string>
+    <string name="ConfirmPass">Підтвердіть пароль</string>
+    <string name="Registration">Реєстрація</string>
+    <string name="SeriesAndNumIDcard">Серія та ID студентського(ВА12344321)US Букви</string>
+    <string name="SignIn">SignIn</string>
+    <string name="title_activity_signin">Вхід</string>
+    <string name="Default">Default</string>
+    <string name="TextVerificationCode">Код підтвердження</string>
+    <string name="HintVerificationCode">Введіть 6 цифр</string>
+    <string name="ExpanationVerificationCode">Чекайте (від 1 до 60 секунд) код надійде вам у смс повідомення</string>
+    <string name="imageDescription">imageDescription</string>
+
+
+    <!--MainStudentPage-->
+    <string name="studentInfo">Про студента</string>
+    <string name="studentPIB">ПІБ</string>
+    <string name="faculty">Факультет</string>
+    <string name="group">Група</string>
+    <string name="dateOfEntry">Рік вступу</string>
+    <string name="formOfStudying">Форма навчання</string>
+    <string name="btnLoadPhotoStudent">Змінити фото профілю</string>
+    <string name="btnListFriends">Друзі</string>
+    <string name="btnListPoll">0 Опитувань</string>
+    <string name="btnListWall">0 Записи</string>
+    <string name="btnListSubscribers">Підписники</string>
+    <string name="hindEditTextAddNotes">Додати запис</string>
+    <string name="contentDescription">TODO</string>
+    <string name="Online">В мережі</string>
+    <string name="NotOnline">Не в мережі</string>
+    <string name="menuSearch">Пошук</string>
+    <string name="menuMessenger">Повідомлення</string>
+    <string name="menuMainStudentPage">Моя сторінка</string>
+    <string name="menuSchedule">Розклад</string>
+    <string name="menuSettings">Налаштування</string>
+    <string name="emptyWall">У вас немає записів</string>
+    <string name="btnWallNotes">Записи</string>
+
+    <!--Settings-->
+    <string name="btnSignOut">Вийти</string>
+    <string name="todo">TODO</string>
+
+    <!--FriendsActivity-->
+    <string name="Friends">Усі друзі</string>
+    <string name="FriendsOnline">Друзі онлайн</string>
+    <string name="Users">Користувачі</string>
+    <string name="FriendsProfile">Друзі користувача</string>
+    <string name="SearchPeople">Пошук</string>
+    <string name="SearchFriend">Пошук друзів</string>
+    <string name="SearchFriendOnline">Пошук онлайн друзів</string>
+    <string name="btnTextRequests">Заявки</string>
+    <string name="StudentNameAndLastName">Ім\'я та Прізвище</string>
+    <string name="StudentGroup">Група</string>
+    <string name="DefaultTextListFriend">У вас поки немає друзів</string>
+    <string name="DefaultTextListMessengers">У вас поки немає повідомлень</string>
+    <string name="DefaultTextListFriendsProfile">У даного користувача поки немає друзів</string>
+    <!--Profile-->
+    <string name="btnAddFriend">Додати в друзі  </string>
+    <string name="btnRejectFriend">Відхилити</string>
+    <string name="emptyWallProfile">Даний користувач поки немає записів</string>
+    <string name="btnSendMessageProfile">Написати</string>
+
+    <!--OnlineFriendsFragment-->
+    <string name="DefaultTextOnlineListFriend">Немає друзів онлайн</string>
+
+    <string name="DefaultTextSenderedFriendsRequestsList">Немає надісланих запитів на дружбу</string>
+    <string name="DefaultTextRequestsFriendsList">Немає отриманих запитів на дружбу</string>
+
+    <!--RequestsFriendsFragment-->
+
+    <string name="btnAddFriendRequest">Додати в друзі</string>
+    <string name="btnRequestFriendBack">Друзі</string>
+    <string name="btnDeclineFriendRequest">Відхилити</string>
+
+    <!--MySubscribersFragment-->
+
+    <string name="DefaultTextListMySubscribers">У вас поки немає підписників</string>
+    <string name="DefaultTextListSubscribersProfile">У даного користувача поки немає підписників</string>
+    <string name="DefaultTextListSubscribedsProfile">У даного користувача поки немає підписків</string>
+    <string name="DefaultTextListMySubscribeds">У вас поки немає підпиcок на інших</string>
+    <string name="DefaultTextListMyOnlineFriends">Немає друзів онлайн</string>
+    <string name="MySubscribers">Ваші підписники</string>
+    <string name="SubscribersProfile">Підписники користувача</string>
+    <string name="SubscribedsProfile">Підписки користувача</string>
+    <string name="MyOnlineFriends">В мережі друзів</string>
+    <string name="MyOnlineFriends2">друзів</string>
+    <string name="MyFriendOnline">Ваші друзі онлайн</string>
+    <string name="MySubscribeds">Сторінки на які ви підписані</string>
+    <string name="SearchMySubscribers">Пошук підписника</string>
+    <string name="SearchMySubscribeds">Пошук підписаних</string>
+    <string name="btnCancelMySubscribeds">Відписатися</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Messages-->
+    <string name="hintMessage">Повідомлення</string>
+
+    <!--Polls-->
+    <string name="Polls">Опитування</string>
+    <string name="YourPolls">Ваші опитування</string>
+    <string name="NewPolls">Нові опитування</string>
+    <string name="FinishedPolls">Пройдені опитування</string>
+    <string name="btnCreateNewPoll">Створити опитування</string>
+    <string name="tvCreatedNamePoll">Назва опитування</string>
+    <string name="tvHintCreatedNamePoll">Назва опитування (унікальне ім\'я)</string>
+    <string name="tvCreatedDescriptionPoll">Опис опитування</string>
+    <string name="tvHintCreatedDescriptionPoll">Опис опитування (не обов\'язково)</string>
+    <string name="btnAddQuestion">Додати запитання</string>
+    <string name="btnDeleteQuestion">Видалити запитання</string>
+    <string name="btnCreateQuestion">Створити запитання</string>
+    <string name="hintQuestion">Питання</string>
+    <string name="hintVariant">Варіант </string>
+    <string name="btnAddVariant">Додати варіант</string>
+    <string name="btnAddVariantPlus">+</string>
+    <string name="btnFinishCreatePoll">Завершити</string>
+
+    <!--Posts-->
+    <string name="hintComment">Коментар</string>
+    <string name="hintCommentAnswer">Відповісти</string>
+    <string name="likesPost">Оцінили</string>
+    <string name="DefaultTextListLikesPost">Цей пост поки немає лайків</string>
+</resources>

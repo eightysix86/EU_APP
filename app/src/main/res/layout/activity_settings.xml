@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.Settings"
+    android:background="@color/backgroundStudentMainPage">
+
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menuSettings"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"/>
+
+
+    <Button
+        android:id="@+id/btnExit"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+
+        android:background="@android:color/white"
+        android:layout_above="@+id/bottom_navigation_settings"
+        android:layout_alignLeft="@+id/tvSettings"
+        android:layout_alignStart="@+id/tvSettings"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:textSize="20sp"
+        android:text="@string/btnSignOut"
+        android:textColor="@android:color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/bottom_navigation_item_background_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>

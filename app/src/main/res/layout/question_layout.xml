@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundStudentMainPage"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_marginBottom="55dp">
+
+    <LinearLayout
+        android:id="@+id/LLQuestionPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etQuestionPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintQuestion"
+        android:inputType="text"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        app:met_baseColor="#05080A"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/SignInFormsMet"
+        app:met_singleLineEllipsis="true"
+       >
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+
+
+
+        <Button
+            android:id="@+id/btnAddVariant"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_add_variant"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/btnAddVariantPlus"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp" />
+
+        <View
+            android:id="@+id/lineBetweenQuestionsPoll"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

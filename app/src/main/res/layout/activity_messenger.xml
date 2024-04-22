@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMessenger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.Messenger"
+    android:background="@color/backgroundStudentMainPage">
+
+    <TextView
+        android:id="@+id/defaultTextListMessengers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textColor="@color/onlineText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/menuMessenger"
+        android:textSize="26sp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"/>
+    <View
+        android:id="@+id/lineAboveMessenger"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/tvMessenger"
+        android:background="@color/linesMessenger" />
+
+    <!--
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvMessenger"
+        android:textSize="30sp"
+        android:text="Чат">
+    </Button>
+-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessengers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvMessenger"
+        android:layout_marginTop="10dp"
+        android:stackFromBottom="false"
+        android:focusable="auto"
+        android:layout_above="@+id/bottom_navigation_messenger">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBarMessengers"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_messenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/bottom_navigation_item_background_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>

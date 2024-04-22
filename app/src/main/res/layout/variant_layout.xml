@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp">
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupPoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/deleteVariant"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_delete_variant"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="">
+
+            </RadioButton>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etQuestionVariantPoll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintVariant"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:met_baseColor="#05080A"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/SignInFormsMet"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+
+
+
+
+
+
+</RelativeLayout>

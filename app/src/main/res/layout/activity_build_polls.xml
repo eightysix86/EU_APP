@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.BuildPollsActivity"
+    android:background="@color/backgroundStudentMainPage"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:id="@+id/LLTopCreatedPolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+        <Button
+            android:id="@+id/btnBackCreatedPolls"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+
+            android:background="@drawable/arrow_back"
+            android:paddingStart="0dp"
+
+            android:paddingLeft="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvPolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCreateNewPoll"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineCreatedPollsTop"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="2dp"
+        android:layout_below="@+id/LLTopCreatedPolls"
+        android:background="@color/linesMessenger" />
+
+
+
+    <LinearLayout
+        android:id="@+id/LLNameCreatedPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/LLTopCreatedPolls"
+        android:layout_marginBottom="45dp"
+        android:gravity="center_horizontal">
+
+
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etNamePoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/tvHintCreatedNamePoll"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15sp"
+
+        android:visibility="visible"
+        app:met_baseColor="#05080A"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/SignInFormsMet"
+        app:met_singleLineEllipsis="true">
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <TextView
+            android:id="@+id/tvPollTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCreatedNamePoll"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tvPollName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="17sp"
+            android:textColor="@color/onlineText"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCreatedPoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:scrollbarAlwaysDrawVerticalTrack="false">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btnCreateQuestion"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_add_question"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/btnCreateQuestion"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLbtnsActionQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnAddQuestion"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_write_message"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:visibility="visible"
+            android:paddingLeft="5dp"
+            android:text="@string/btnAddQuestion"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnDeleteQuestion"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_decline_friend"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btnDeleteQuestion"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            />
+
+
+        <Button
+            android:id="@+id/btnFinishCreatePoll"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_add_friend"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="@string/btnFinishCreatePoll"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_createdPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/bottom_navigation_item_background_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>

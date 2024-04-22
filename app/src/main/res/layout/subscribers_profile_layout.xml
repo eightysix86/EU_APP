@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SubscribersProfile_profile_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_online_subscribersProfile"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:civ_border_width="2.5dp"
+        app:civ_border_color="@color/colorAccentWhite"
+        android:visibility="gone"
+        android:layout_below="@+id/SubscribersProfile_profile_image"
+        android:layout_toRightOf="@id/SubscribersProfile_profile_image"
+        android:layout_toEndOf="@id/SubscribersProfile_profile_image"
+        android:layout_marginTop="-16dp"
+        android:layout_marginLeft="-22dp"
+        android:layout_marginStart="-22dp"
+        android:src="@color/imgOnline"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/SubscribersProfile_profile_image"
+        android:layout_toRightOf="@+id/SubscribersProfile_profile_image">
+
+        <TextView
+            android:id="@+id/SubscribersProfile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прізвище Ім'я"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/SubscribersProfile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="група"
+            android:textSize="13sp"
+            android:textStyle=""
+            android:textColor="@color/onlineText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

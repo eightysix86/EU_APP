@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.Message"
+    android:id="@+id/rlMessenger"
+    android:background="@color/backgroundStudentMainPage">
+
+    <Button
+        android:id="@+id/btnBackFromMessage"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/arrow_back"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/RLMessageTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/btnBackFromMessage"
+        android:layout_toEndOf="@id/btnBackFromMessage">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_online_message"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:civ_border_width="1.5dp"
+        app:civ_border_color="@color/colorAccentWhite"
+        android:visibility="gone"
+        android:layout_below="@+id/message_profile_image"
+        android:layout_toRightOf="@id/message_profile_image"
+        android:layout_toEndOf="@id/message_profile_image"
+        android:layout_marginTop="-12dp"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginStart="-16dp"
+        android:src="@color/imgOnline"/>
+
+<LinearLayout
+    android:id="@+id/LLMessageTopText"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_toRightOf="@+id/message_profile_image"
+    android:layout_toEndOf="@+id/message_profile_image">
+
+        <TextView
+        android:id="@+id/tvMessageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+            android:text="Прізвище Ім'я"
+        android:layout_margin="0dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/tvMessageLastSeenUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="статус онлайн або останнього візиту"
+        android:textColor="@color/onlineText"
+        android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineAboveMessenger"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/RLMessageTop"
+        android:background="@color/linesMessenger" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RLMessageTop"
+        android:layout_above="@+id/editTextMessage"
+        android:id="@+id/list_of_messages"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"/>
+
+    <View
+        android:id="@+id/lineAboveEtWall"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/editTextMessage"
+        android:background="@color/linesMessenger" />
+
+
+    <ImageView
+        android:id="@+id/emoji_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_smileemodji"
+        android:background="@color/backgroundStudentMainPage"
+        android:contentDescription="@string/contentDescription"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingRight="15dp"
+        android:paddingEnd="15dp"
+        android:background="@color/backgroundStudentMainPage"
+        android:hint="@string/hintMessage"
+        android:textColorHint="@color/textColorHint"
+        app:emojiconSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/emoji_button"
+        android:layout_toEndOf="@+id/emoji_button" />
+
+
+        <ImageView
+            android:id="@+id/submit_button_menu"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:padding="4dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@color/backgroundStudentMainPage"
+            android:contentDescription="@string/contentDescription"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
+

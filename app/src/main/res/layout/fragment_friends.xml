@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFriends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/appBarLayoutFriends"
+    tools:context=".pages.FriendsActivity"
+    android:background="@color/backgroundStudentMainPage">
+
+
+        <EditText
+            android:id="@+id/editTextFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+
+            android:autofillHints="@string/name_hint"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/ic_menu_search"
+            android:drawableLeft="@drawable/ic_menu_search"
+            android:drawablePadding="20dp"
+            android:focusable="false"
+
+            android:hint="@string/SearchFriend"
+            android:inputType="textPersonName"
+
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:targetApi="o" />
+
+<RelativeLayout
+    android:id="@+id/rlButtonsFriends"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextFriends"
+    android:gravity="center">
+    <Button
+        android:id="@+id/btnFindRequests"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_find_people"
+        android:drawableStart="@drawable/person_add"
+        android:drawableLeft="@drawable/person_add"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        android:text="@string/btnTextRequests"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnFindNewFriends"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/btnFindRequests"
+            android:layout_toEndOf="@+id/btnFindRequests"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_find_people"
+            android:drawableStart="@drawable/btn_drawable_requests"
+            android:drawableLeft="@drawable/btn_drawable_requests"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+
+            android:text="@string/SearchPeople"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/defaultTextListFriend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/onlineText"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friendsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlButtonsFriends"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="55dp"
+            android:layout_above="@+id/bottom_navigation_friends"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarMyFriends"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

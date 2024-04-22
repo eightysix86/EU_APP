@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_messenger"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_online_messenger"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:civ_border_width="2.5dp"
+        app:civ_border_color="@color/colorAccentWhite"
+        android:visibility="gone"
+        android:layout_below="@+id/image_messenger"
+        android:layout_toRightOf="@id/image_messenger"
+        android:layout_toEndOf="@id/image_messenger"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="-23dp"
+        android:layout_marginStart="-23dp"
+        android:src="@color/imgOnline"/>
+
+
+    <TextView
+        android:id="@+id/tvUnseenMessage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/tv_circle_unseens_message"
+        android:textColor="@color/colorAccentWhite"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:text="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="22dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/LLNameMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/image_messenger"
+        android:layout_toRightOf="@+id/image_messenger">
+
+        <TextView
+            android:id="@+id/MessengerUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Прізвище Ім'я"
+            android:textStyle=""
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvLastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="Останнє повідомлення користувача"
+            android:textStyle=""
+            android:textColor="@color/onlineText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLTimeMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tvMessengerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginTop="30dp"
+            android:textSize="14sp"
+            android:text="час повідомлення"
+            android:textColor="@color/onlineText"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvConfirmSendLastMessage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/sign_send_confirm_message"
+        android:textColor="@color/colorAccentWhite"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_below="@+id/LLNameMessenger"
+        android:layout_toStartOf="@+id/LLTimeMessenger"
+        android:layout_toLeftOf="@+id/LLTimeMessenger"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="-3dp"
+         />
+
+    <TextView
+        android:id="@+id/tvConfirmReceivedLastMessage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/sign_received_confirm_message"
+        android:textColor="@color/colorAccentWhite"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_below="@+id/LLNameMessenger"
+        android:layout_toStartOf="@+id/LLTimeMessenger"
+        android:layout_toLeftOf="@+id/LLTimeMessenger"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="-3dp"
+        />
+
+
+    <View
+        android:id="@+id/lineAboveMessenger"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@+id/image_messenger"
+        android:layout_toRightOf="@id/image_messenger"
+        android:layout_toEndOf="@id/image_messenger"
+        android:background="@color/linesMessenger"
+         />
+</RelativeLayout>

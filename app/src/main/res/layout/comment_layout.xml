@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlCommentComment"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@color/backgroundStudentMainPage">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_profile_image"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_online_comment"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:civ_border_width="2.5dp"
+        app:civ_border_color="@color/colorAccentWhite"
+        android:visibility="gone"
+        android:layout_below="@+id/comment_profile_image"
+        android:layout_toRightOf="@id/comment_profile_image"
+        android:layout_toEndOf="@id/comment_profile_image"
+        android:layout_marginTop="-16dp"
+        android:layout_marginLeft="-22dp"
+        android:layout_marginStart="-22dp"
+        android:src="@color/imgOnline"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/LLCommentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/comment_profile_image"
+        android:layout_toRightOf="@+id/comment_profile_image">
+
+        <TextView
+            android:id="@+id/comment_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textStyle=""
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/tvCommentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="205dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLPhotoComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:layout_centerHorizontal="false"
+        android:layout_toEndOf="@+id/comment_profile_image"
+        android:layout_toRightOf="@+id/comment_profile_image"
+        android:layout_below="@+id/LLCommentInfo">
+
+        <ImageView
+            android:id="@+id/ImagePostComment"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:background="@mipmap/logopnu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLCommentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LLPhotoComment"
+        android:layout_toEndOf="@+id/comment_profile_image"
+        android:layout_toRightOf="@+id/comment_profile_image"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp">
+
+
+
+        <TextView
+        android:id="@+id/comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:textStyle=""
+        android:textColor="@color/onlineText" />
+
+        <TextView
+            android:id="@+id/tv_response_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hintCommentAnswer"
+            android:paddingLeft="7dp"
+            android:paddingStart="7dp"
+            android:paddingBottom="3dp"
+
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/progress_end" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnLikeMyComment"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/btn_like_unpress"
+        android:contentDescription="@string/todo"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+
+
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LLPhotoComment"
+
+
+        android:textColor="@android:color/black"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/tvCountLikeComment"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:minWidth="20dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:layout_marginStart="-36dp"
+        android:layout_marginLeft="-36dp"
+        android:layout_marginTop="-1dp"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/btnLikeMyComment"
+        android:layout_toEndOf="@+id/btnLikeMyComment"
+        android:layout_below="@+id/LLCommentInfo"
+
+        android:textColor="@color/onlineText"
+
+        android:contentDescription="@string/todo"
+        tools:targetApi="m"
+         />
+
+
+    <LinearLayout
+        android:id="@+id/LLCommentCommentMy"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewComentComment"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_toEndOf="@+id/comment_profile_image"
+        android:layout_toRightOf="@+id/comment_profile_image">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comment_profile_image_coment"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_online_comment_coment"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="2.5dp"
+            app:civ_border_color="@color/colorAccentWhite"
+            android:visibility="gone"
+            android:layout_marginTop="-16dp"
+            android:layout_marginLeft="-22dp"
+            android:layout_marginStart="-22dp"
+            android:src="@color/imgOnline"/>
+
+        <ImageView
+            android:id="@+id/emoji_button_commentcomment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_smileemodji"
+            android:contentDescription="@string/contentDescription"
+             />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnSendWallPhotoNestedComment"
+            android:padding="0dp"
+            android:src="@drawable/btn_send_photo_wall"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+
+            android:contentDescription="@string/contentDescription"
+            />
+
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editTextCommentComment"
+            android:layout_width="wrap_content"
+            android:maxWidth="140dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingRight="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:hint="@string/hintComment"
+            android:background="@color/backgroundStudentMainPage"
+            android:textColorHint="@color/textColorHint"
+            android:layout_toRightOf="@+id/emoji_button_commentcomment"
+            android:layout_toEndOf="@+id/emoji_button_commentcomment"
+            app:emojiconSize="20sp"
+            />
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sendComentOnComment"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:padding="7dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:layout_below="@+id/recyclerViewComentComment"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@color/backgroundStudentMainPage"
+            android:contentDescription="@string/contentDescription"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/LLbtnSettingsPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp">
+
+        <Button
+            android:id="@+id/btnSettingComment"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:drawableTop="@drawable/btn_setting_post"
+            android:drawableTint="@color/iconPostColor"
+
+            android:textColor="@android:color/black"
+
+            android:contentDescription="@string/todo"
+            tools:targetApi="m" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineAboveComment"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/LLCommentContent"
+        android:background="@color/lines" />
+
+    <View
+        android:id="@+id/lineBelowEtWallComment"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/LLCommentCommentMy"
+        android:background="@color/lines" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerViewComentComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/lineAboveComment"
+        android:layout_toEndOf="@+id/comment_profile_image"
+        android:layout_toRightOf="@+id/comment_profile_image"
+        android:stackFromBottom="false">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

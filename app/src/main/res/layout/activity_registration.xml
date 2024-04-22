@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration.Registration"
+    android:background="@color/backgroundStudentMainPage">
+<LinearLayout
+
+    android:id="@+id/LinearLatoutReg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+<TextView
+    android:id="@+id/textRegistration"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="26sp"
+    android:textAlignment="center"
+    android:text="@string/Registration"
+    android:textColor="@color/registeredFormsMet"
+    android:layout_margin="0dp">
+</TextView>
+
+<com.rengwuxian.materialedittext.MaterialEditText
+    android:id="@+id/SeriesAndNumField"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/SeriesAndNumIDcard"
+    android:inputType="text"
+    android:text=""
+    android:textColor="@color/colorPrimary"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="15sp"
+
+    app:met_baseColor="#05080A"
+    app:met_floatingLabel="highlight"
+    app:met_primaryColor="@color/registeredFormsMet"
+    app:met_singleLineEllipsis="true">
+
+</com.rengwuxian.materialedittext.MaterialEditText>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/phoneField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneField"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15sp"
+
+        app:met_baseColor="#05080A"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/registeredFormsMet"
+        app:met_singleLineEllipsis="true">
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/passFieldReg"
+    android:hint="@string/passField"
+    android:inputType="textPassword"
+    android:text=""
+    android:textColor="@color/colorPrimary"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="15sp"
+
+    app:met_floatingLabel="highlight"
+    app:met_baseColor="#05080A"
+    app:met_primaryColor="@color/registeredFormsMet"
+    app:met_singleLineEllipsis="true"
+    >
+
+</com.rengwuxian.materialedittext.MaterialEditText>
+
+<com.rengwuxian.materialedittext.MaterialEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/confirmPassField"
+    android:hint="@string/ConfirmPass"
+    android:inputType="textPassword"
+    android:text=""
+    android:textColor="@color/colorPrimary"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="15sp"
+
+    app:met_floatingLabel="highlight"
+    app:met_baseColor="#05080A"
+    app:met_primaryColor="@color/registeredFormsMet"
+    app:met_singleLineEllipsis="true"
+    >
+
+</com.rengwuxian.materialedittext.MaterialEditText>
+
+<Button
+    android:id="@+id/btnRegister"
+    android:layout_width="130dp"
+    android:layout_height="0dp"
+    android:textColor="@android:color/white"
+    android:background="@drawable/btn_register"
+    android:layout_weight="1"
+    android:text="@string/btnConfirm"
+    style="?android:attr/buttonBarButtonStyle"/>
+
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbarRegistration"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="98dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/LinearLatoutReg"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

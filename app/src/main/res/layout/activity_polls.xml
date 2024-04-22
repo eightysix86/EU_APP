@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlPolls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.PollsActivity"
+    android:background="@color/backgroundStudentMainPage">
+
+
+    <LinearLayout
+        android:id="@+id/LLTopPolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+
+        <Button
+
+            android:id="@+id/btnBackPolls"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+
+            android:background="@drawable/arrow_back"
+            android:paddingStart="0dp"
+
+            android:paddingLeft="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvPolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Polls"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linePollsTop"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/LLTopPolls"
+        android:background="@color/linesMessenger" />
+
+    <Button
+        android:id="@+id/btnCreatePolls"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_add_friend"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/btnCreateNewPoll"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_below="@+id/linePollsTop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/LLbtnsPolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreatePolls"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+
+         <Button
+            android:id="@+id/btnYourPolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="230dp"
+            android:text="@string/YourPolls"
+            android:background="@color/lines"
+            android:padding="5dp"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/btn_action"
+            android:drawableRight="@drawable/btn_action"/>
+
+        <Button
+            android:id="@+id/btnNewPolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="230dp"
+            android:text="@string/NewPolls"
+            android:background="@color/lines"
+            android:padding="5dp"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/btn_action"
+            android:drawableRight="@drawable/btn_action"/>
+
+        <Button
+            android:id="@+id/btnFinishedPolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="230dp"
+            android:text="@string/FinishedPolls"
+            android:background="@color/lines"
+            android:padding="5dp"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/btn_action"
+            android:drawableRight="@drawable/btn_action"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_polls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/bottom_navigation_item_background_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>
